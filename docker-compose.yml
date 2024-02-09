@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  db:
+    image: ld-postgres:latest
+    container_name: db
+    environment:
+      - POSTGRES_USER=nodejs
+      - POSTGRES_PASSWORD=nodejs
+      - POSTGRES_DB=test-db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./.postgres:/var/lib/postgresql/data

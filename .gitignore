@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.vscode
+.history
+.idea
+/node_modules
+.DS_Store
+sandbox
+.postgres
