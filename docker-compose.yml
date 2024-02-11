@@ -3,6 +3,7 @@ version: '3'
 services:
   db:
     image: ld-postgres:latest
+    restart: always
     container_name: db
     environment:
       - POSTGRES_USER=nodejs
